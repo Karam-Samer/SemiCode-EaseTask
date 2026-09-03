@@ -1,0 +1,19 @@
+@use '../../styles/mixin' as *;
+
+.popup {
+  @include position($p: fixed, $t: 0, $l: 0);
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  @include distance($w: 100%, $h: 100%);
+  .box {
+    @include background(#433352, 10px 20px, 10px);
+    width: 400px;
+    margin: 50px auto;
+    @include respond(350) {
+      width: 315px;
+    }
+    @include respond(650) {
+      width: 400px;
+    }
+  }
+}

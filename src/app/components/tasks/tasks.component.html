@@ -1,0 +1,19 @@
+<div class="tasks">
+    <div class="head mb-3">
+        <h4>{{ user().name }}'s Tasks</h4>
+        <button class="btn btn-primary" (click)="togglePopup()">Add Task</button>
+    </div>
+    <div class="body">
+        @if(getTasks.length > 0){
+        @for(task of getTasks; track task.id){
+        <app-task [task]="task"></app-task>
+        }
+        }@else {
+        <p>No tasks available for this user.</p>
+        }
+    </div>
+</div>
+
+@if(isPopupOpen){
+<app-new-task (closePopupEvent)="togglePopup()" (click)="togglePopup()" [selectedUserId]="user().id"></app-new-task>
+}

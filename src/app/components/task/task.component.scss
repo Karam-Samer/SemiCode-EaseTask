@@ -1,0 +1,8 @@
+@use '../../styles/mixin' as *;
+
+.task {
+  @include background(#bf9ee5, 10px 20px, 10px);
+  & > * {
+    color: #000;
+  }
+}

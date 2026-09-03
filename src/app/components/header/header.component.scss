@@ -1,0 +1,9 @@
+@use '../../styles/mixin' as *;
+
+
+header {
+  @include background(#3f0c73, 20px, 0 0 10px 10px);
+  img {
+    width: 60px;
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../styles/mixin' as *;
+
+.tasks {
+  @include background(#3a2c54, 10px 20px, 10px);
+
+  .head {
+    @include flex($jc: space-between);
+  }
+}

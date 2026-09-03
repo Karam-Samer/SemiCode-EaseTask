@@ -1,0 +1,16 @@
+@use '../../styles/mixin' as *;
+
+.user {
+  @include flex($jc: flex-start);
+  @include background(#433352, 10px, 10px);
+  transition-duration: 0.5s;
+  cursor: pointer;
+  &.active,
+  &:hover {
+    background-color: #9965d0;
+  }
+  img {
+    @include distance($w: 30px, $h: 30px);
+    border-radius: 50%;
+  }
+}

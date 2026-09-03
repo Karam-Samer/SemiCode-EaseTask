@@ -1,0 +1,6 @@
+<div class="task mb-3">
+    <h5 class="fw-bolder">{{ task().title }}</h5>
+    <h6 class="mb-2">{{ task().date | date:'fullDate' }}</h6>
+    <p>{{ task().summary }}</p>
+    <button class="btn btn-success text-light d-block ms-auto" (click)="completeTask()">Complete</button>
+</div>

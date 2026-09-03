@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'bootstrap/scss/bootstrap' as *;
+
+body {
+  background-color: #0c061a;
+}
+
+* {
+  color: #c3b3d8;
+}
+
+
